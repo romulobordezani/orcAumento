@@ -1,4 +1,4 @@
-const SPREAD_SHEET_ID = '1mNhAYcNSsolLHTkx4eOVkfUdRFn2e4w2AHM4ZcEZHwY';
+const SPREAD_SHEET_ID = ' Coloque aqui o ID da sua planilha';
 
 const FIRST_ROW = 8;
 const MAX_DEBT_ROWS = 44;
@@ -12,7 +12,6 @@ const MOBILITY_COLUMN = 18;
 const ENTERTAINMENT_COLUMN = 23;
 const PET_COLUMN = 28;
 const DEBT_COLUMN = 33;
-
 
 function getCleanValue(dirtyValue) {
     const forcedToNum = parseFloat(dirtyValue);
@@ -133,10 +132,6 @@ function setupTriggers() {
 }
 
 
-// Uncomment this line and execute it once to link to your Sheet
-// setupTriggers()
-
-
 function updateView(dataMap) {
     const sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
 
@@ -174,7 +169,7 @@ function handleEdit(event) {
     }
 }
 
-// Usefull for debugging only...
+// Useful for debugging only...
 function fakeCall () {
 
     const event = {
