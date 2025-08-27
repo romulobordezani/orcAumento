@@ -157,10 +157,7 @@ function updateView(dataMap) {
 
     const futureResourceBalance = totalEarnings - totalDebts;
     sheet.getRange(3, 23).setValue(futureResourceBalance);
-
 }
-
-
 
 function handleEdit(event) {
     if (event.range.getSheet().getName() !== 'Anual Pago') {
