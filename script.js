@@ -152,7 +152,7 @@ function updateView(dataMap) {
     sheet.getRange(3, 18).setValue(resourceBalance);
 
     // Future Balance
-    const totalDebts = dataMap.get('total').totalPayed + dataMap.get('total').totalEstimated + dataMap.get('total').totalCreditCard;
+    const totalDebts = dataMap.get('total').totalPayed + dataMap.get('total').totalEstimated;
     const totalEarnings = dataMap.get('income').resources.totalPayed + dataMap.get('income').resources.totalEstimated;
 
     const futureResourceBalance = totalEarnings - totalDebts;
